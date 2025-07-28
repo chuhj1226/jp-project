@@ -1,4 +1,4 @@
-import math
+
 def solution(n):
     answer = 0
     if math.isqrt(n) ** 2 == n :

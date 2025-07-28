@@ -1,8 +1,12 @@
-import math
-def solution(n):
-    answer = 0
-    if math.isqrt(n) ** 2 == n :
-        answer = 1
-    else :
-        answer = 2
+def solution(num_list):
+    answer = []
+    var = 0
+    var2 = 0
+    for num in num_list :
+        if num % 2 == 1 :
+            var2 += 1
+        elif num % 2 == 0 :
+            var += 1
+            
+    answer.extend([var,var2])
     return answer
